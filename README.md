@@ -1,2 +1,5 @@
-# password-generator
-Password Generator with selectable options
+# Password Generator
+Simple password generator made with html, js
+
+
+![Example Image](./example.png)
