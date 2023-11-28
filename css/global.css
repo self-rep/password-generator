@@ -1,0 +1,47 @@
+.bg-primary {
+    background-color: rgba(15, 15, 15);
+}
+.bg-secondary {
+    background-color: rgba(22, 22, 22, 1);
+}
+.custom-box {
+    padding: 30px;
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+.flex-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+  }
+  .output_box {
+    flex: 1;
+    width: 100%;
+  }
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-left: -8%;
+    margin-bottom: 10px; 
+}
+.checkbox-label input[type="checkbox"] {
+    margin-right: 10px;
+}
+.test {
+    display: inline-flex;
+}
+#length {
+    width: 50px;
+    float: left;
+}
+.bg-error {
+    background-color: rgb(174, 13, 13);
+}

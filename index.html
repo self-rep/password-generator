@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPA</title>
+    <link rel="stylesheet" href="./css/materialize.css">
+    <link rel="stylesheet" href="./css/global.css">
+
+
+</head>
+<style>
+
+</style>
+
+<body class="bg-primary">
+    <div class="container center">
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card z-depth-4 bg-secondary darken-1 custom-box">
+                    <div class="card-content white-text">
+                        <span class="card-title text-xl">Password Generator</span>
+                        <div class="flex-container">
+                            <div class="input-field output_box">
+                                <input placeholder="Password1234" id="output" type="text"
+                                    class="white-text validate"><input placeholder="32" value="32" id="length"
+                                    type="number" class="white-text validate">
+                            </div>
+                            <a onclick="Generate()" class="waves-effect waves-light btn">Generate</a>
+                            <a onclick="Copy()" class="waves-effect waves-light btn"><i
+                                    class="fa-solid fa-copy"></i></a>
+                        </div>
+
+                        <div class="options left">
+                            <div class="row">
+                                <div class="col s12 m6">
+                                    <div class="card-content white-text">
+                                        <div class="options left">
+                                            <div class="row">
+                                                <div class="col s12">
+                                                    <label class="checkbox-label">
+                                                        <input type="checkbox" id="ilc" checked="checked"
+                                                            class="filled-in" />
+                                                        <span>Include Lowercase Characters</span>
+                                                    </label>
+                                                </div>
+                                                <div class="col s12">
+                                                    <label class="checkbox-label">
+                                                        <input type="checkbox" id="iuc" checked="checked"
+                                                            class="filled-in" />
+                                                        <span>Include Uppercase Characters</span>
+                                                    </label>
+                                                </div>
+                                                <div class="col s12">
+                                                    <label class="checkbox-label">
+                                                        <input type="checkbox" checked="checked" id="in"
+                                                            class="filled-in" />
+                                                        <span>Include Numbers</span>
+                                                    </label>
+                                                </div>
+                                                <div class="col s12">
+                                                    <label class="checkbox-label">
+                                                        <input type="checkbox" id="is" class="filled-in" />
+                                                        <span>Include Symbols</span>
+                                                    </label>
+                                                </div>
+                                                <div class="col s12">
+                                                    <label class="checkbox-label">
+                                                        <input type="checkbox" checked="checked" id="esc"
+                                                            class="filled-in" />
+                                                        <span>Exclude Similar Characters</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Options End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./js/materialize.js"></script>
+<script src="./js/password.js"></script>
+<script src="https://kit.fontawesome.com/5ed5b577bc.js" crossorigin="anonymous"></script>
+
+</html>
